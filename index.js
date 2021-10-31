@@ -1,5 +1,5 @@
 // get imports of packages
-const port = process.env.port || 8000 
+const PORT = process.env.PORT || 8000 
 const express = require('express') 
 const axios = require('axios')
 const cheerio = require('cheerio')
@@ -53,7 +53,7 @@ app.get('/jobs', (req,res) => {
     res.json(jobs)
 })
 
-app.get('/jobs/:pageId', async (req,res) => {
+app.get('/jobs/:pageId', (req,res) => {
     const pageId = req.params.pageId
 
     const pageAddress = pages.filter(page => page.name === pageId)[0].url
@@ -80,4 +80,4 @@ app.get('/jobs/:pageId', async (req,res) => {
     }).catch(err => console.log(err))
 })
 
-app.listen(port, () => console.log(`server running on port ${port}`))
+app.listen(PORT, () => console.log(`server running on port ${PORT}`))
