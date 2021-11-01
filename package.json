@@ -1,10 +1,10 @@
 {
-  "name": "jikapi",
+  "name": "jik-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon --exec babel-node index.js"
   },
   "author": "Njoguu",
   "license": "ISC",
