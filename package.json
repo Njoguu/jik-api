@@ -12,14 +12,15 @@
   "author": "Njoguu",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.16.0",
     "axios": "^0.24.0",
     "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "@babel/core": "7.16.0",
-    "@babel/node": "7.16.0",
-    "@babel/preset-env": "7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
     "nodemon": "^2.0.14"
   }
 }
